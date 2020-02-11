@@ -1,0 +1,33 @@
+#abc
+{
+    font-family: Verdana;
+    color: red;
+
+}
+
+.class1
+{
+    font-size: xx-large;
+}
+
+marquee 
+{
+     font-style: oblique;
+     background-color: seashell;
+
+}
+
+a + p
+{
+    background-color: slateblue;
+}
+
+div > p
+{
+    background-color: orangered;
+}
+
+a :link { color: yellow; }
+a :visited { color: springgreen; }
+a :hover { color: purple; }
+a :active { color: seagreen; }
