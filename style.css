@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------   Selectors  Examples  ------------------------------*/
+
+/* element selector */
+p {
+  color: darkgrey;
+  font-size: 16px;
+}
+
+/* Id selector */
+a#purchase {
+  color: red;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+
+
+
+/* -------------------------------   Pseudo-class Examples  ------------------------------*/
+/* href link decorations */s
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: darkblue;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+
+/* -------------------------------   Attribute example   ------------------------------*/
+/* To put border on table page images */
+
+[title~=Picture] {
+  border: 5px solid #a0a0a0;
+}
+
+
+
+/* -------------------------------   Combinator example   ------------------------------*/
+/* Customizing all the Heading level two tags under article tag on table page */
+
+article > h2 {
+  color: black;
+  font-family: fantasy;
+}
+
+
+
+
+
+
+/* Style the header */
+
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+  width: 80%;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
