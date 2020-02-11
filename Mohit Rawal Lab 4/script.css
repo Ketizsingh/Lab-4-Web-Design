@@ -1,0 +1,73 @@
+
+/* -------------------------------   Pseudo-class Examples  ------------------------------*/
+/* href link decorations */s
+/* unvisited link */
+a:link
+     {
+      color:red;
+    }
+ /* Visited Link */
+    a:visited 
+    {
+      color:orangered;
+    }
+/* Mouse over link */    
+    a:hover 
+    {
+      color:greenyellow;
+    }
+/* Selected Link */   
+    a:active
+     {
+      color: blue;
+    }
+
+/* -------------------------------   Pseudo-element Examples  ------------------------------*/
+/* It will increase the size of First letter of a text written in list item tag */
+div > li::first-letter 
+{
+font-size: xx-large;
+}
+
+/* -------------------------------   Combinator example   ------------------------------*/
+/* It will change the size of text in list item tag */
+      div > li 
+      {
+          font-size:larger
+      }
+
+/* -------------------------------   Attribute example   ------------------------------*/
+/* To put border on table page images */
+
+      [title~=Picture] {
+        border: 5px solid red;
+      }
+/* To assign border properties */ 
+      
+   th{border: 1px solid black;
+   border-collapse: collapse;}
+
+   /* To apply properties to table data */
+    td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* To apply color to nth-child(even rows) to table rows */
+
+table tr:nth-child(even){background-color:grey ;}
+        table{border: 1px solid black;
+        border-collapse: collapse;}
+
+/* To provide width to the table*/
+
+table{width:100%} 
+
+/* To provide space between the links */
+
+a{padding:20px}
+
+/* To change the text color of the text written in List item tag */
+
+li{color: peru}
